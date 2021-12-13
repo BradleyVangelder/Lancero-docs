@@ -1,0 +1,52 @@
+---
+title: 'Node.js Customers'
+---
+
+import Callout from 'nextra-theme-docs/callout';
+
+# Node.js Customers
+## `lancero.customer.find()`
+Method used to find a customer
+
+### Parameters
+- email: The email of the customer you want to look up
+
+### Example
+```ts
+const customer = await lancero.customers.find("dries@lancero.app");
+```
+
+## `lancero.customer.create()`
+Method used to create a new customer
+
+### Parameters
+- firstname: Optional, the first name of the customer
+- lastname: Optional, the last name of the customer
+- email: The email of the customer
+- waitlist: Optional, default `false`, should this user automatically be added to the waitlist?
+
+### Example
+```ts
+const customer = await lancero.customers.create({
+    "email": "dries@lancero.app",
+    "firstname": "Dries",
+    "lastname": "Augustyns",
+    "waitlist": true
+});
+```
+
+## `lancero.customer.delete()`
+Method used to delete a customer
+
+<Callout type={"error"} emoji={"🛑"}>
+  Deleting a customers is permanent and cannot be reversed. This customers will lose access.
+</Callout>
+
+### Parameters
+- email: The email of the customer you want to delete
+
+### Example
+```ts
+const customer = await lancero.customers.delete("dries@lancero.app");
+```
+
