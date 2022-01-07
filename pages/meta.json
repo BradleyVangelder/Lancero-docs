@@ -1,7 +1,8 @@
 {
   "index": "Welcome",
-  "node": "Node.js",
-  "public-api": "API",
+  "terminology": "Terminology",
   "portal": "Lancero Portal",
-  "widgets": "Lancero Widgets"
+  "widgets": "Lancero Widgets",
+  "node": "Node.js",
+  "public-api": "API"
 }
