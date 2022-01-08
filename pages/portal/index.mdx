@@ -15,4 +15,5 @@ After a potential user has signed up for the waitlist we show them a button whic
 We show the user a success page and what happens after depends on your configuration.
 
 - If you have configured a redirect URL, we will automatically redirect the user to the URL you have specified and append a claim token as a query parameter. This token can be exchanged for the user's data using your secret key.
+An example of what your redirect url may look like is `https://dashboard.lancero.app/?lancero_token=18553c856c0462412672d416`.
 - If you have not configured a redirect URL, we will do nothing and just show the user a success screen.
