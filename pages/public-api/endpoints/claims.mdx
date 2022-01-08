@@ -1,0 +1,20 @@
+---
+title: 'Claims API'
+---
+
+import Callout from 'nextra-theme-docs/callout';
+
+# Claims
+## POST `/claims/exchange`
+This route is used to exchange your Lancero token for lead and code data.
+Everytime someone claims a code using the no-code Lancero Portal we send them to the redirect URL you specified in your <a href={'https://dashboard.lancero.app/settings/project'}>project settings</a> and append the `lancero_token` query parameter. This token is valid for 60 seconds and can be exchanged for the data of both lead and code using your secret key.
+
+### Request body
+- code: The code that you want to claim
+- email: The email of the customer that wants to claim this code
+
+```json
+{
+    "token": "18553c856c0462412672d416"
+}
+```
