@@ -20,9 +20,10 @@ const lead = await lancero.leads.find("dries@lancero.app");
 Method used to create a new lead
 
 ### Parameters
+- email: The email of the lead
 - firstname: Optional, the first name of the lead
 - lastname: Optional, the last name of the lead
-- email: The email of the lead
+- referralCode: Optional, the referral code of another lead
 - waitlist: Optional, default `false`, should this lead automatically be added to the waitlist?
 
 ### Example
