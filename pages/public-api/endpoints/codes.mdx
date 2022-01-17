@@ -14,6 +14,10 @@ This route is used to find information about a code.
 ## POST `/codes/claim`
 This route is used to claim a code.
 
+<Callout>
+  This route can be accessed with both your public and secret key
+</Callout>
+
 - Method: `POST`
 - Endpoint: `https://api.lancero.app/codes/claim`
 
@@ -50,6 +54,23 @@ This route is used to generate new codes on-demand
     "amount": 2,
     "validFrom": "2021-11-29T17:42:07.647Z",
     "allowedClaims": 10
+}
+```
+
+## POST `/codes/send`
+This route is used to send an email containing a code to leads
+
+- Method: `POST`
+- Endpoint: `https://api.lancero.app/codes/send`
+
+### Request body
+- code: The code you want to send
+- emails: The leads you want to send this code to
+
+```json
+{
+    "code": "fantastic-apple",
+    "emails": ["hello@lancero.app", "thelegend27@lancero.app"]
 }
 ```
 

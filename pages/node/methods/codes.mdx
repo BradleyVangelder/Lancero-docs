@@ -54,6 +54,24 @@ const claim = await lancero.codes.claim({
 });
 ```
 
+## `lancero.codes.send()`
+Method used to send an email containing a code to leads
+
+### Parameters
+- code: The code you want to send
+- leads: The leads you want to send this code to
+
+### Example
+```ts
+const result = await lancero.codes.send({
+    "code": "fantastic-apple",
+    "leads": [
+        "hello@lancero.app",
+        "thelegend27@lancero.app"
+    ]
+});
+```
+
 ## `lancero.codes.delete()`
 Method used to delete a code
 
