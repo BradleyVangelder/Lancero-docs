@@ -24,6 +24,7 @@ Method used to generate new codes on-demand
 - validFrom: Optional, when is this code allowed to be claimed
 - validUntil: Optional, when is this code allowed to be claimed
 - allowedClaims: Optional, default 1, how many customers are allowed to claim this code
+- reservedFor: Optional, the email of the lead you want to reserve this code for
 - type: Optional, default `"creative"`, what type of code do you want to generate
     - `"creative"`, a random adjective and noun (e.g. `curious-pineapple`)
     - `"alphanumeric"`, a 6 character combination of lowercase letters and digits
@@ -35,6 +36,7 @@ const codes = await lancero.codes.generate({
     "amount": 2,
     "validFrom": "2021-11-29T17:42:07.647Z",
     "allowedClaims": 10,
+    "reservedFor": "hello@lancero.app",
     "type": "creative",
 });
 ```
