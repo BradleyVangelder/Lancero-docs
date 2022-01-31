@@ -8,7 +8,7 @@ import lanceroPortal from '../../public/assets/lancero_portal.png'
 Lancero Portal is the perfect tool for anyone that is looking to keep the code minimal. A Lancero Portal operates from your own Lancero.app subdomain. You can claim this domain in <a href={'https://dashboard.lancero.app'}>your dashboard</a>
 
 ## Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bX8UBc0dWZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bX8UBc0dWZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ## How it works
 After you have claimed your unique subdomain, you can start gathering emails. All you need to do in your application is redirect users to your Portal and we will take care of the rest.

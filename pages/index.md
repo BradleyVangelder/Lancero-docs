@@ -12,8 +12,8 @@ If you have any more questions about Lancero, a possible integration or a featur
 
 ## Table of contents
 - [Terminology](/terminology)
-- [Low-code Widgets](/widgets)
-- [No-code portal](/portal)
+- [Low-code Widgets](/features/widgets)
+- [No-code portal](/features/portal)
 - [Node.js library](/node)
 - [API](/public-api)
 

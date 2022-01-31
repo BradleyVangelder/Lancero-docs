@@ -13,3 +13,4 @@ Method used to exchange a Lancero claim token for the lead and code
 ```ts
 const code = await lancero.claims.exchange("18553c856c0462412672d416");
 ```
+
